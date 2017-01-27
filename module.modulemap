@@ -1,5 +1,5 @@
 module Clibsane [system] {
   header "/usr/local/include/sane/sane.h"
-  link "libsane"
+  link "sane-backends"
   export *
 }
