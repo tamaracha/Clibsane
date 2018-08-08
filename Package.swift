@@ -1,10 +1,11 @@
+// swift-tools-version:4.0
 import PackageDescription
 
 let package = Package(
     name: "Clibsane",
     pkgConfig: "sane-backends",
     providers: [
-        .Brew("sane-backends"),
-        .Apt("libsane")
+        .brew(["sane-backends"]),
+        .apt(["libsane"])
     ]
 )
